@@ -38,6 +38,10 @@ public class Cerradura {
 			return this.estado;
 		}
 	}
+	public Boolean cerrarCerradura(){
+		this.estado=false;
+		return this.estado;
+	}
 	public Integer getContrasenia(){
 		return this.contrasenia;
 	}

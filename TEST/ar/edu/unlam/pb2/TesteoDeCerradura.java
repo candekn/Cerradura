@@ -22,7 +22,8 @@ public class TesteoDeCerradura {
 	@Test 
 	public void testQueNoAbraCerradura(){
 		Cerradura cerraduraTres = new Cerradura(454, 3);
-		assertFalse(cerraduraTres.abrirCerradura(6998));
+		cerraduraTres.abrirCerradura(454);
+		assertFalse(cerraduraTres.cerrarCerradura());
 	}
 	@Test
 	public void testCerraduraCerradaPorBloqueo(){
